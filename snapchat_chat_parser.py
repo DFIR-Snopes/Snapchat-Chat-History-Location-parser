@@ -3,7 +3,9 @@ import datetime
 import html
 import json
 import operator
+import pandas as pd
 
+date = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
 if __name__ == "__main__":
     with open("chat_history.json") as json_file:
@@ -46,9 +48,27 @@ if __name__ == "__main__":
             parsed_chat_history[username] = sorted(
                 parsed_chat_history[username], key=operator.itemgetter('Created-Timestamp'))
 
-            timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-            with open("{}_snapchat-chat-history-{}.json".format(timestamp, username), 'w') as output_json_file:
+            
+            file_name_json = "snapchat-chat-history-{}.json".format(username)
+            with open(file_name_json, 'w', encoding="utf-8") as output_json_file:
                 # ensure_ascii=False to make emojis render correctly
                 # https://stackoverflow.com/a/52206290/1576548
                 json.dump(
                     parsed_chat_history[username], output_json_file, indent=4, ensure_ascii=False)
+            
+            with open(file_name_json, 'r', encoding="utf-8") as panda_reader_file:
+           
+                # asdfasdf = os.path.join(os.getcwd(), file_name_json)
+                # print(f"filename: {asdfasdf}")
+            
+                frame = pd.read_json(panda_reader_file)
+                frame.to_csv(file_name_json + '.csv', index=False)
+            
+            os.remove(file_name_json) 
+                    
+     
+
+            
+            
+            
+            
