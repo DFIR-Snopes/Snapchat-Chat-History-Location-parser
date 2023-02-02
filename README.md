@@ -2,7 +2,7 @@
 
 # About
 
-This is a simple tool for analyzing/parsing data from your Snapchat backup. To start, you'll need to download your saved Snapchat data: 
+This is a simple tool for analyzing/parsing data from your Snapchat account download. To start, you'll need to download your saved Snapchat data: 
 
 https://support.snapchat.com/en-US/a/download-my-data
 
@@ -40,6 +40,3 @@ You'll see something that looks like this:
 
 ![folium map screenshot](./docs/snapchat-map-screenshot.png)
 
-# Roadmap
-
-- [ ] Save location history to GPX file
