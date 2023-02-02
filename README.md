@@ -21,6 +21,7 @@ To use, run:
 ```bash
 $ python3 snapchat_chat_parser.py
 ```
+Or download the pre-built exe and run within same folder as 'chat_history.json'.
 
 ## Generating map from location history
 
