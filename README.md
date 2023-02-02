@@ -10,11 +10,11 @@ Currently, there's two functionalities offered by this program.
 
 ## Chat parsing
 
-Snapchat stores your entire chat history in one file, `chat_history.json`. By using `snapchat_chat_parser.py`, you'll convert that file into a set of per-user json files, e.g. if your entire chat history contains messages between Alice, Bob, and Cody, running that script will produce the following files:
+Snapchat stores your entire chat history in one file, `chat_history.json`. By using `snapchat_chat_parser.py`, you'll convert that file into a set of per-user csv files, e.g. if your entire chat history contains messages between Alice, Bob, and Cody, running that script will produce the following files:
 
-* messages-with-alice.json
-* messages-with-bob.json
-* messages-with-cody.json
+* messages-with-alice.csv
+* messages-with-bob.csv
+* messages-with-cody.csv
 
 To use, run:
 
