@@ -2,7 +2,7 @@
 
 # About
 
-This is a simple tool for analyzing/parsing data from your Snapchat account download. To start, you'll need to download your saved Snapchat data: 
+This is a simple tool for analyzing/parsing data from Snapchat account downloads. To start, you'll need to download your saved Snapchat data: 
 
 https://support.snapchat.com/en-US/a/download-my-data
 
